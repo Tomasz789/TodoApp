@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d9082033-44c9-42ab-8708-454968cfa4df": {
+      "ProjectGuid": "d9082033-44c9-42ab-8708-454968cfa4df",
+      "DisplayName": "ToDoList.WebApp",
+      "ColorIndex": 0
+    },
+    "b1c7404d-59d2-449b-acc2-158a278e7dd4": {
+      "ProjectGuid": "b1c7404d-59d2-449b-acc2-158a278e7dd4",
+      "DisplayName": "Todo.Domain.Entities",
+      "ColorIndex": 1
+    },
+    "675d5568-f215-4bb5-94a2-d79c98969958": {
+      "ProjectGuid": "675d5568-f215-4bb5-94a2-d79c98969958",
+      "DisplayName": "ToDoApp.Tests",
+      "ColorIndex": 2
+    },
+    "6871e8c1-e80f-49b9-93c0-fb02097ef575": {
+      "ProjectGuid": "6871e8c1-e80f-49b9-93c0-fb02097ef575",
+      "DisplayName": "TodoApp.Testing",
+      "ColorIndex": 3
+    },
+    "835e6fbb-7944-432b-9a8e-e13efbc9d6a3": {
+      "ProjectGuid": "835e6fbb-7944-432b-9a8e-e13efbc9d6a3",
+      "DisplayName": "TodoApp.DataVerifier",
+      "ColorIndex": 4
+    },
+    "f655da1e-2224-4ba0-80f3-29e1f8d43b17": {
+      "ProjectGuid": "f655da1e-2224-4ba0-80f3-29e1f8d43b17",
+      "DisplayName": "TodoApp.DAL",
+      "ColorIndex": 5
+    },
+    "9f4b977f-5240-40db-8de8-7a41b83e05c4": {
+      "ProjectGuid": "9f4b977f-5240-40db-8de8-7a41b83e05c4",
+      "DisplayName": "TodoApp.Repositories",
+      "ColorIndex": 6
+    },
+    "ee84b9ec-5898-470d-a3ae-559e2798c5bb": {
+      "ProjectGuid": "ee84b9ec-5898-470d-a3ae-559e2798c5bb",
+      "DisplayName": "TodoApp.Services",
+      "ColorIndex": 7
+    }
+  },
+  "NextColorIndex": 8
+}

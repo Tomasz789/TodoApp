@@ -1,0 +1,7 @@
+﻿@using Todo.Domain.Entities
+@model IQueryable<TodoList>
+
+@foreach(var m in Model)
+    {
+       <partial name="ListSummary" model="m" />
+    }

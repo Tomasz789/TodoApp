@@ -1,0 +1,17 @@
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\TodoApp.DAL.deps.json
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\TodoApp.DAL.runtimeconfig.json
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\TodoApp.DAL.runtimeconfig.dev.json
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\TodoApp.DAL.dll
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\TodoApp.DAL.pdb
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\Todo.Domain.Entities.dll
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\TodoApp.DataVerifier.dll
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\Todo.Domain.Entities.pdb
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\bin\Debug\netcoreapp3.1\TodoApp.DataVerifier.pdb
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.AssemblyInfoInputs.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.AssemblyInfo.cs
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.csproj.CoreCompileInputs.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.csproj.CopyComplete
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.dll
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.pdb
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.genruntimeconfig.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.csprojAssemblyReference.cache

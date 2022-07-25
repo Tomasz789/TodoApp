@@ -1,0 +1,9 @@
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\bin\Debug\netcoreapp3.1\TodoApp.DataVerifier.deps.json
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\bin\Debug\netcoreapp3.1\TodoApp.DataVerifier.dll
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\bin\Debug\netcoreapp3.1\TodoApp.DataVerifier.pdb
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.AssemblyInfoInputs.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.AssemblyInfo.cs
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.csproj.CoreCompileInputs.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.dll
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.pdb
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.csprojAssemblyReference.cache
