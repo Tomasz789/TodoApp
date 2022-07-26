@@ -46,7 +46,7 @@ namespace Todo.Domain.Entities
         /// <param name="todoTask">Task to do.</param>
         /// <returns>Number of items in the task list.</returns>
         /// <exception cref="ArgumentNullException">If the task is null.</exception>
-        public int AddTaskToList(TodoTask todoTask)
+        public void AddTaskToList(TodoTask todoTask)
         {
             if (todoTask == null)
             {
@@ -55,7 +55,7 @@ namespace Todo.Domain.Entities
 
             todoTasks.Add(todoTask);
 
-            return todoTasks.Count;
+            //return todoTasks.Count;
         }
 
         private bool SetTextValue(string value)

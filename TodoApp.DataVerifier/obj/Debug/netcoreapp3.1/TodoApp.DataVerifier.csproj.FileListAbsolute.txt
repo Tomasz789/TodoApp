@@ -6,4 +6,5 @@ D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp
 D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.csproj.CoreCompileInputs.cache
 D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.dll
 D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.pdb
-D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.csprojAssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.csproj.AssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DataVerifier\obj\Debug\netcoreapp3.1\TodoApp.DataVerifier.GeneratedMSBuildEditorConfig.editorconfig

@@ -14,4 +14,5 @@ D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.cspr
 D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.dll
 D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.pdb
 D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.genruntimeconfig.cache
-D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.csprojAssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.csproj.AssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.DAL\obj\Debug\netcoreapp3.1\TodoApp.DAL.GeneratedMSBuildEditorConfig.editorconfig

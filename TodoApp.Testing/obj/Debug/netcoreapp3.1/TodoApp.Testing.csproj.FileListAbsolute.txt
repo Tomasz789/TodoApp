@@ -160,4 +160,5 @@ D:\Projekty\ToDoList.WebApp\TodoApp.Testing\bin\Debug\netcoreapp3.1\Castle.Core.
 D:\Projekty\ToDoList.WebApp\TodoApp.Testing\bin\Debug\netcoreapp3.1\Moq.dll
 D:\Projekty\ToDoList.WebApp\TodoApp.Testing\bin\Debug\netcoreapp3.1\System.Diagnostics.EventLog.dll
 D:\Projekty\ToDoList.WebApp\TodoApp.Testing\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
-D:\Projekty\ToDoList.WebApp\TodoApp.Testing\obj\Debug\netcoreapp3.1\TodoApp.Testing.csprojAssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.Testing\obj\Debug\netcoreapp3.1\TodoApp.Testing.csproj.AssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.Testing\obj\Debug\netcoreapp3.1\TodoApp.Testing.GeneratedMSBuildEditorConfig.editorconfig

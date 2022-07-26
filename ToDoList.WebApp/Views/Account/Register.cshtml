@@ -1,0 +1,15 @@
+﻿@using Todo.Domain.Entities
+@model User
+
+<div class="col-9 m-2">
+    <form method="post">
+        <label asp-for="UserName"></label>
+        <input type="text" asp-for="UserName"/>
+        <label asp-for="Email"></label>
+        <input type="text" asp-for="Email" placeholder="myEmail@example.com"/>
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password"/>
+        <label>Confirm password:</label>
+        <input type="password"/>
+    </form>
+</div>

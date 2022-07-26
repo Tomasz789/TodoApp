@@ -9,4 +9,5 @@ D:\Projekty\ToDoList.WebApp\Todo.Domain.Entities\obj\Debug\netcoreapp3.1\Todo.Do
 D:\Projekty\ToDoList.WebApp\Todo.Domain.Entities\bin\Debug\netcoreapp3.1\TodoApp.DataVerifier.dll
 D:\Projekty\ToDoList.WebApp\Todo.Domain.Entities\bin\Debug\netcoreapp3.1\TodoApp.DataVerifier.pdb
 D:\Projekty\ToDoList.WebApp\Todo.Domain.Entities\obj\Debug\netcoreapp3.1\Todo.Domain.Entities.csproj.CopyComplete
-D:\Projekty\ToDoList.WebApp\Todo.Domain.Entities\obj\Debug\netcoreapp3.1\Todo.Domain.Entities.csprojAssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\Todo.Domain.Entities\obj\Debug\netcoreapp3.1\Todo.Domain.Entities.csproj.AssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\Todo.Domain.Entities\obj\Debug\netcoreapp3.1\Todo.Domain.Entities.GeneratedMSBuildEditorConfig.editorconfig

@@ -39,5 +39,6 @@ namespace TodoApp.DAL.Seeder
                 new TodoTask("Do nothing", "test", DateTime.Now.AddHours(1), TaskStatus.Completed) { Id = 3, TaskListId = 1, Priority=Priority.HIGH }
             );
         }
+
     }
 }

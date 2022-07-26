@@ -1,7 +1,19 @@
 ﻿@using Todo.Domain.Entities
 @model IQueryable<TodoList>
 
-@foreach(var m in Model)
-    {
-       <partial name="ListSummary" model="m" />
-    }
+<div class="d-flex col-12">
+    <div class="d-flex col-3">
+        <h2>Filter by: </h2>
+        <p>Date:</p>
+    </div>
+   <div class="col-9 mb-2">
+       <a class="btn btn-primary" asp-controller="List" asp-action="Create"> 
+                <i class="bi bi-plus-circle-fill"></i>&nbsp; Add list
+       </a>
+        @foreach(var m in Model)
+        {
+            <partial name="ListSummary" model="m" />
+        }
+    </div>
+</div>
+

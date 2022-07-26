@@ -13,4 +13,5 @@ D:\Projekty\ToDoList.WebApp\TodoApp.Repositories\obj\Debug\netcoreapp3.1\TodoApp
 D:\Projekty\ToDoList.WebApp\TodoApp.Repositories\obj\Debug\netcoreapp3.1\TodoApp.Repositories.csproj.CopyComplete
 D:\Projekty\ToDoList.WebApp\TodoApp.Repositories\obj\Debug\netcoreapp3.1\TodoApp.Repositories.dll
 D:\Projekty\ToDoList.WebApp\TodoApp.Repositories\obj\Debug\netcoreapp3.1\TodoApp.Repositories.pdb
-D:\Projekty\ToDoList.WebApp\TodoApp.Repositories\obj\Debug\netcoreapp3.1\TodoApp.Repositories.csprojAssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.Repositories\obj\Debug\netcoreapp3.1\TodoApp.Repositories.csproj.AssemblyReference.cache
+D:\Projekty\ToDoList.WebApp\TodoApp.Repositories\obj\Debug\netcoreapp3.1\TodoApp.Repositories.GeneratedMSBuildEditorConfig.editorconfig
