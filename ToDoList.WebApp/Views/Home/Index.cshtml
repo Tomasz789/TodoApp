@@ -1,4 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> signInManager;
+
+@{
+    ViewData["Title"] = "Todoapp - create useful task lists";
 }
 
+@if (!signInManager.IsSignedIn(User))
+{
+    <partial name="StartPage" />
+}
+else {
+    <h1>Logged</h1>
+}

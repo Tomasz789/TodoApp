@@ -1,16 +1,17 @@
-﻿@using Todo.Domain.Entities
-@model IQueryable<TodoList>
+﻿@using ToDoList.WebApp.Models.ViewModels.PagingVM
+@using ToDoList.WebApp.Models.ViewModels.Sort
+@model TaskListsPagingViewModel
 
 <div class="d-flex col-12">
-    <div class="d-flex col-3">
-        <h2>Filter by: </h2>
-        <p>Date:</p>
+    <div class="col-3">
+        <partial name="SortListSummary" model = "new SortListViewModel()" />
+        
     </div>
    <div class="col-9 mb-2">
        <a class="btn btn-primary" asp-controller="List" asp-action="Create"> 
                 <i class="bi bi-plus-circle-fill"></i>&nbsp; Add list
        </a>
-        @foreach(var m in Model)
+        @foreach(var m in Model.Lists)
         {
             <partial name="ListSummary" model="m" />
         }

@@ -32,6 +32,7 @@ namespace TodoApp.Repositories.Repositories
         public void Update(T entity)
         {
             Context.Set<T>().Update(entity);
+            Context.Entry<T>(entity).State = EntityState.Modified;
         }
 
         public void Delete(T entity)
@@ -42,6 +43,11 @@ namespace TodoApp.Repositories.Repositories
         public IQueryable<T> GetByCondition(Expression<Func<T, bool>> expression)
         {
             return Context.Set<T>().Where(expression).AsNoTracking();
+        }
+
+        public T GetOneByCondition(Expression<Func<T, bool>> expression)
+        {
+            return Context.Set<T>().FirstOrDefault(expression);
         }
     }
 }

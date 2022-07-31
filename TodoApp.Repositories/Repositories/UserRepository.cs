@@ -8,16 +8,12 @@ using TodoApp.DAL.RepositoryContracts;
 
 namespace TodoApp.Repositories.Repositories
 {
-    public class UserRepository : RepositoryBase<User>, IUserRepository
+    public class UserRepository : RepositoryBase<IdentityUser>, IUserRepository
     {
         public UserRepository(AppDatabaseContext context) : base(context)
         {
         }
 
-        public User GetById(Guid id)
-        {
-            return Context.Users.FirstOrDefault(x => x.Id == id);
-        }
 
         public bool Login(string userNameOrEmail, string password)
         {
@@ -28,10 +24,7 @@ namespace TodoApp.Repositories.Repositories
                 return false;
             }
 
-            if (user.Password != password)
-            {
-                return false;
-            }
+     
 
             return true;
         }

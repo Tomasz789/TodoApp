@@ -5,9 +5,9 @@ using Todo.Domain.Entities;
 
 namespace TodoApp.DAL.RepositoryContracts
 {
-    public interface IUserRepository : IRepository<User>
+    public interface IUserRepository : IRepository<IdentityUser>
     {
-        User GetById(Guid id);
+       // User GetById(Guid id);
 
     }
 }

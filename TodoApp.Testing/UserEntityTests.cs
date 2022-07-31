@@ -10,12 +10,12 @@ namespace TodoApp.Testing
     [TestFixture]
     public class UserEntityTests
     {
-        private User user;
+        private IdentityUser user;
 
         [SetUp]
         public void Init()
         {
-            user = new User(Guid.NewGuid(), "User1", "user1@example.com", "mYPasswRd33!");
+            user = new IdentityUser(Guid.NewGuid(), "User1", "user1@example.com", "mYPasswRd33!");
         }
 
         [TestCase("---aabbcc,", ExpectedResult = false)]
@@ -77,7 +77,7 @@ namespace TodoApp.Testing
             string email = "myTestUser15@test.com";
             var id = Guid.NewGuid();
 
-            var newUser = new User(id, username, email, password);
+            var newUser = new IdentityUser(id, username, email, password);
 
             Assert.NotNull(newUser);
             Assert.AreEqual(id, newUser.Id);

@@ -19,6 +19,233 @@ namespace ToDoList.WebApp.Migrations
                 .HasAnnotation("ProductVersion", "5.0.14")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Todo.Domain.Entities.IdentityUser", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("IdentityUser");
+                });
+
             modelBuilder.Entity("Todo.Domain.Entities.TodoList", b =>
                 {
                     b.Property<int>("Id")
@@ -40,7 +267,7 @@ namespace ToDoList.WebApp.Migrations
                     b.Property<DateTime>("Updated")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("UserId")
+                    b.Property<Guid?>("UserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -48,35 +275,6 @@ namespace ToDoList.WebApp.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("TodoLists");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedDate = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(1400),
-                            Description = "test list",
-                            Title = "My list",
-                            Updated = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(1613),
-                            UserId = new Guid("ae50b1f6-bc08-48b1-9a2d-8afca4a5d4f9")
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedDate = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(2115),
-                            Description = "test list",
-                            Title = "My list2",
-                            Updated = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(2133),
-                            UserId = new Guid("ae50b1f6-bc08-48b1-9a2d-8afca4a5d4f9")
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedDate = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(2157),
-                            Description = "test list",
-                            Title = "My list 3",
-                            Updated = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(2160),
-                            UserId = new Guid("0a2395b4-c238-4987-8ad3-8ccb43d250bd")
-                        });
                 });
 
             modelBuilder.Entity("Todo.Domain.Entities.TodoTask", b =>
@@ -117,113 +315,64 @@ namespace ToDoList.WebApp.Migrations
                     b.HasIndex("TaskListId");
 
                     b.ToTable("Tasks");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedDate = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(4803),
-                            Description = "test",
-                            EndDate = new DateTime(2022, 7, 25, 8, 57, 29, 790, DateTimeKind.Local).AddTicks(2415),
-                            Priority = 0,
-                            Status = 0,
-                            TaskListId = 1,
-                            Title = "Buy milk",
-                            Updated = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(4981)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedDate = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(5554),
-                            Description = "test",
-                            EndDate = new DateTime(2022, 7, 25, 8, 57, 29, 790, DateTimeKind.Local).AddTicks(5498),
-                            Priority = 1,
-                            Status = 0,
-                            TaskListId = 2,
-                            Title = "Buy coffee",
-                            Updated = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(5562)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedDate = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(5585),
-                            Description = "test",
-                            EndDate = new DateTime(2022, 7, 25, 8, 57, 29, 790, DateTimeKind.Local).AddTicks(5577),
-                            Priority = 2,
-                            Status = 0,
-                            TaskListId = 1,
-                            Title = "Do nothing",
-                            Updated = new DateTime(2022, 7, 25, 7, 57, 29, 790, DateTimeKind.Local).AddTicks(5587)
-                        });
                 });
 
-            modelBuilder.Entity("Todo.Domain.Entities.User", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
 
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
 
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
 
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("ae50b1f6-bc08-48b1-9a2d-8afca4a5d4f9"),
-                            Created = new DateTime(2022, 7, 25, 7, 57, 29, 786, DateTimeKind.Local).AddTicks(2518),
-                            Email = "user1@gmail.com",
-                            Password = "aaabb1C#",
-                            UpdatedAt = new DateTime(2022, 7, 25, 7, 57, 29, 788, DateTimeKind.Local).AddTicks(7502),
-                            UserName = "Firstuser1"
-                        },
-                        new
-                        {
-                            Id = new Guid("0a2395b4-c238-4987-8ad3-8ccb43d250bd"),
-                            Created = new DateTime(2022, 7, 25, 7, 57, 29, 788, DateTimeKind.Local).AddTicks(8597),
-                            Email = "userno2@wp.pl",
-                            Password = "bbbAFF##C1",
-                            UpdatedAt = new DateTime(2022, 7, 25, 7, 57, 29, 788, DateTimeKind.Local).AddTicks(8614),
-                            UserName = "SecondUser22"
-                        },
-                        new
-                        {
-                            Id = new Guid("841a4b33-4181-4553-aaab-c9cffef86196"),
-                            Created = new DateTime(2022, 7, 25, 7, 57, 29, 788, DateTimeKind.Local).AddTicks(8962),
-                            Email = "testUser3@gmail.com",
-                            Password = "test#PassworD!",
-                            UpdatedAt = new DateTime(2022, 7, 25, 7, 57, 29, 788, DateTimeKind.Local).AddTicks(8966),
-                            UserName = "thirdtestUser3"
-                        });
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Todo.Domain.Entities.TodoList", b =>
                 {
-                    b.HasOne("Todo.Domain.Entities.User", "User")
+                    b.HasOne("Todo.Domain.Entities.IdentityUser", "User")
                         .WithMany("TodoLists")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });
@@ -239,14 +388,14 @@ namespace ToDoList.WebApp.Migrations
                     b.Navigation("TodoList");
                 });
 
+            modelBuilder.Entity("Todo.Domain.Entities.IdentityUser", b =>
+                {
+                    b.Navigation("TodoLists");
+                });
+
             modelBuilder.Entity("Todo.Domain.Entities.TodoList", b =>
                 {
                     b.Navigation("Tasks");
-                });
-
-            modelBuilder.Entity("Todo.Domain.Entities.User", b =>
-                {
-                    b.Navigation("TodoLists");
                 });
 #pragma warning restore 612, 618
         }

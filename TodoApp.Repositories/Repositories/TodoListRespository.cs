@@ -12,5 +12,6 @@ namespace TodoApp.Repositories.Repositories
         public TodoListRespository(AppDatabaseContext context) : base(context)
         {
         }
+
     }
 }

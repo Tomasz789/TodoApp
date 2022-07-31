@@ -12,6 +12,8 @@ namespace TodoApp.DAL.RepositoryContracts
 
         IQueryable<T> GetByCondition(Expression<Func<T, bool>> expression);
 
+        T GetOneByCondition(Expression<Func<T, bool>> expression);
+
         void Create(T entity);
 
         void Update(T entity);

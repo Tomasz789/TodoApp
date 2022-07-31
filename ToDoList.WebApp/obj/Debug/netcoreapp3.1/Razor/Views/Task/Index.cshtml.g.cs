@@ -26,8 +26,15 @@ using ToDoList.WebApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Projekty\ToDoList.WebApp\ToDoList.WebApp\Views\_ViewImports.cshtml"
+using ToDoList.WebApp.Models.Paging;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"750431664523ee003b15de728bac97fadfc259d1", @"/Views/Task/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c430b579e400a2f49998de8c0d731e0859c9ea04", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fff0249d22b4efe97e78c0b8de63431b6e0025e6", @"/Views/_ViewImports.cshtml")]
     public class Views_Task_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Todo.Domain.Entities.TodoTask>>
     {
         #pragma warning disable 1998

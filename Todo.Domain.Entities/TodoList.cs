@@ -22,9 +22,6 @@ namespace Todo.Domain.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required]
-        [MaxLength(100, ErrorMessage ="List must have max 100 characters.")]
-        [MinLength(1, ErrorMessage = "At least one character required.")]
         public string Title { get; private set; }
 
         public string Description { get; private set; }
@@ -33,9 +30,9 @@ namespace Todo.Domain.Entities
 
         public DateTime Updated { get; private set; }
 
-        public virtual Guid UserId { get; set; }
+        //public virtual Guid UserId { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual IdentityUser User { get; set; }
 
 
         public virtual IEnumerable<TodoTask> Tasks => todoTasks;

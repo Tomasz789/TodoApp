@@ -13,19 +13,17 @@ namespace Todo.Domain.Entities
         public TodoTask(string title, string description, DateTime endDate, TaskStatus status)
         {
             SetTaskTitle(title);
-            CheckEndDate(endDate);
+            SetEndDate(endDate);
             this.Description = description;
             this.CreatedDate = DateTime.Now;
             this.Updated = DateTime.Now;
+            this.Status = status;
         }
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required]
-        [MaxLength(100, ErrorMessage = "List title must have max 100 characters.")]
-        [MinLength(1, ErrorMessage = "At least one character required.")]
         public string Title { get; private set; }
 
         public string Description { get; set; }
@@ -44,7 +42,7 @@ namespace Todo.Domain.Entities
 
         public virtual TodoList TodoList { get; set; }
 
-        public bool CheckEndDate(DateTime dateTime)
+        public void SetEndDate(DateTime dateTime)
         {
             try
             {
@@ -52,11 +50,10 @@ namespace Todo.Domain.Entities
             }
             catch (ArgumentException)
             {
-                return false;
+                this.EndDate = DateTime.Now;
             }
 
             this.EndDate = dateTime;
-            return true;
         }
 
         public void SetTaskTitle(string title)

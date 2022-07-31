@@ -20,13 +20,13 @@ namespace TodoApp.Testing.RepositoryTests
         [Test]
         public void AddNewUserSuccessfully_Test()
         {
-            var user = new User(Guid.NewGuid(), "testMockUser1", "testMockUser1@test.com", "T3stMo!5ckUser8R");
+            var user = new IdentityUser(Guid.NewGuid(), "testMockUser1", "testMockUser1@test.com", "T3stMo!5ckUser8R");
             
             // Arrange
             var contextMock = new Mock<AppDatabaseContext>();
-            var userDbSetContext = new Mock<DbSet<User>>(Guid.NewGuid(), "testMockUser1", "testMockUser1@test.com", "T3stMo!5ckUser8R");
-            contextMock.Setup(c => c.Set<User>()).Returns(userDbSetContext.Object);
-            userDbSetContext.Setup(x => x.Add(It.IsAny<User>()).Entity).Returns(user);
+            var userDbSetContext = new Mock<DbSet<IdentityUser>>(Guid.NewGuid(), "testMockUser1", "testMockUser1@test.com", "T3stMo!5ckUser8R");
+            contextMock.Setup(c => c.Set<IdentityUser>()).Returns(userDbSetContext.Object);
+            userDbSetContext.Setup(x => x.Add(It.IsAny<IdentityUser>()).Entity).Returns(user);
 
             // Act
             var repo = new RepositoryWrapper(contextMock.Object);
@@ -34,8 +34,8 @@ namespace TodoApp.Testing.RepositoryTests
 
             // Assert
 
-            contextMock.Verify(x => x.Set<User>());
-            userDbSetContext.Verify(x => x.Add(It.Is<User>(y => y == user)));
+            contextMock.Verify(x => x.Set<IdentityUser>());
+            userDbSetContext.Verify(x => x.Add(It.Is<IdentityUser>(y => y == user)));
         }
     }
 }

@@ -11,9 +11,9 @@ namespace Todo.Domain.Entities
     /// <summary>
     /// Class represents an user entity.
     /// </summary>
-    public class User : EntityId
+    public class IdentityUser : EntityId
     {
-        public User(Guid id, string username, string email, string password)
+        public IdentityUser(Guid id, string username, string email, string password)
         {
             this.Id = id;
             this.SetUserName(username);
@@ -23,7 +23,7 @@ namespace Todo.Domain.Entities
             this.Created = DateTime.Now;
             this.UpdatedAt = DateTime.Now;
         }
-        protected User()
+        protected IdentityUser()
         {
             Id = Guid.NewGuid();
         }
